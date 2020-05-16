@@ -65,9 +65,14 @@ public class EditDataActivity extends AppCompatActivity {
         if(taskClass.getDate()[1]<10){
             d += "0"+taskClass.getDate()[1];
         }
+        else{
+            d += taskClass.getDate()[1];
+        }
         d += ",";
         if(taskClass.getDate()[2]<10){
             d += "0"+taskClass.getDate()[2];
+        }else{
+            d += taskClass.getDate()[2];
         }
         editText_date.setText(d);
 
